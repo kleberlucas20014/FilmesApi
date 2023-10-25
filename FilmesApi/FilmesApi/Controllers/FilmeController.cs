@@ -30,9 +30,11 @@ public class FilmeController : ControllerBase
     
     }
     [HttpGet("{id}")]
-    public Filme? RecuperaFilmesPorId(int id)
+    public IActionResult RecuperaFilmesPorId(int id)
     {
-        return filmes.FirstOrDefault(filmes => filmes.Id == id);
+        return filmes.FirstOrDefau lt(filmes => filmes.Id == id);
+        if (filme == null) return NotFound();
+        return Ok(filmes);
     }
 
         
