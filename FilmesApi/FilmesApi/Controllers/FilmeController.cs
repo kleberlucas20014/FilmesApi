@@ -17,9 +17,10 @@ public class FilmeController : ControllerBase
     {
         filme.Id = id++;
         filmes.Add(filme);
-        Console.WriteLine(filme.Titulo);
-        Console.WriteLine(filme.Genero);
-        Console.WriteLine(filme.Duracao);
+        return CreatedAtAction(nameof(RecuperaFilmePorId),
+                new { id = filme.Id },
+                filme);
+
     }
 
     [HttpGet]
@@ -32,7 +33,7 @@ public class FilmeController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult RecuperaFilmesPorId(int id)
     {
-        return filmes.FirstOrDefau lt(filmes => filmes.Id == id);
+        return filmes.FirstOrDefault(filmes => filmes.Id == id);
         if (filme == null) return NotFound();
         return Ok(filmes);
     }

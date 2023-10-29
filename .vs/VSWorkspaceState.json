@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FilmesApi",
+    "\\FilmesApi\\FilmesApi",
+    "\\FilmesApi\\FilmesApi\\Controllers",
+    "\\FilmesApi\\FilmesApi\\models"
+  ],
+  "SelectedNode": "\\FilmesApi\\FilmesApi\\Controllers\\FilmeController.cs",
+  "PreviewInSolutionExplorer": false
+}
