@@ -4,7 +4,12 @@
     "\\FilmesApi",
     "\\FilmesApi\\FilmesApi",
     "\\FilmesApi\\FilmesApi\\Controllers",
-    "\\FilmesApi\\FilmesApi\\models"
+    "\\FilmesApi\\FilmesApi\\Data",
+    "\\FilmesApi\\FilmesApi\\Data\\Dtos",
+    "\\FilmesApi\\FilmesApi\\models",
+    "\\FilmesApi\\FilmesApi\\obj",
+    "\\FilmesApi\\FilmesApi\\Profiles",
+    "\\FilmesApi\\FilmesApi\\Properties"
   ],
   "SelectedNode": "\\FilmesApi\\FilmesApi\\Controllers\\FilmeController.cs",
   "PreviewInSolutionExplorer": false
